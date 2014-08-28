@@ -1,0 +1,525 @@
+2014-08-27 17:38:55,611 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'FindGenericServiceObjects'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.ServiceLocatorImplementer, MyService] for object with name 'FindGenericServiceObjects' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 11 ---> System.TypeLoadException: Could not load type 'MyService.ServiceLocatorImplementer' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:38:55,627 [8] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - processed 0 IObjectPostProcessors defined in application context [spring.root].
+2014-08-27 17:38:55,629 [8] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - No IEventRegistry found with name 'eventRegistry' : using default 'Spring.Objects.Events.Support.EventRegistry'.
+2014-08-27 17:38:55,673 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'myJob'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.MyJob, MyService] for object with name 'myJob' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 6 ---> System.TypeLoadException: Could not load type 'MyService.MyJob' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:38:55,716 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'FindGenericServiceObjects'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.ServiceLocatorImplementer, MyService] for object with name 'FindGenericServiceObjects' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 11 ---> System.TypeLoadException: Could not load type 'MyService.ServiceLocatorImplementer' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:38:55,719 [8] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - No IMessageSource found with name 'messageSource' : using default 'StaticMessageSource : '.
+2014-08-27 17:38:55,762 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'myJob'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.MyJob, MyService] for object with name 'myJob' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 6 ---> System.TypeLoadException: Could not load type 'MyService.MyJob' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:38:55,805 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'FindGenericServiceObjects'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.ServiceLocatorImplementer, MyService] for object with name 'FindGenericServiceObjects' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 11 ---> System.TypeLoadException: Could not load type 'MyService.ServiceLocatorImplementer' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:38:55,808 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name &ScheduleObject => canonical name ScheduleObject
+2014-08-27 17:38:55,810 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'ScheduleObject'
+2014-08-27 17:38:55,812 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'ScheduleObject' with merged definition [RootObjectDefinition : Class [Spring.Scheduling.Quartz.SchedulerFactoryObject]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 42].
+2014-08-27 17:38:55,813 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'ScheduleObject'.
+2014-08-27 17:38:55,817 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'ScheduleObject' to allow for resolving potential circular references
+2014-08-27 17:38:55,818 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'ScheduleObject'
+2014-08-27 17:38:55,823 [8] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'triggers[0]' in object 'ScheduleObject' to object 'simpleTrigger'.
+2014-08-27 17:38:55,825 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name simpleTrigger => canonical name simpleTrigger
+2014-08-27 17:38:55,826 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'simpleTrigger'
+2014-08-27 17:38:55,827 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'simpleTrigger' with merged definition [RootObjectDefinition : Class [Spring.Scheduling.Quartz.SimpleTriggerObject]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 33].
+2014-08-27 17:38:55,828 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'simpleTrigger'.
+2014-08-27 17:38:55,829 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'simpleTrigger' to allow for resolving potential circular references
+2014-08-27 17:38:55,830 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'simpleTrigger'
+2014-08-27 17:38:55,831 [8] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'jobDetail' in object 'simpleTrigger' to object 'jobDetailNonConcurrent'.
+2014-08-27 17:38:55,832 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -          GetObjectInternal: obtaining instance for name jobDetailNonConcurrent => canonical name jobDetailNonConcurrent
+2014-08-27 17:38:55,833 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'jobDetailNonConcurrent'
+2014-08-27 17:38:55,834 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'jobDetailNonConcurrent' with merged definition [RootObjectDefinition : Class [Spring.Scheduling.Quartz.MethodInvokingJobDetailFactoryObject]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 26].
+2014-08-27 17:38:55,835 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'jobDetailNonConcurrent'.
+2014-08-27 17:38:55,837 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'jobDetailNonConcurrent' to allow for resolving potential circular references
+2014-08-27 17:38:55,838 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'jobDetailNonConcurrent'
+2014-08-27 17:38:55,839 [8] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'targetObject' in object 'jobDetailNonConcurrent' to object 'GenericServiceManager'.
+2014-08-27 17:38:55,841 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -             GetObjectInternal: obtaining instance for name GenericServiceManager => canonical name GenericServiceManager
+2014-08-27 17:38:55,842 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'GenericServiceManager'
+2014-08-27 17:38:55,843 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'GenericServiceManager' with merged definition [RootObjectDefinition : Class [MyService.GenericServiceManager]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 22].
+2014-08-27 17:38:55,844 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'GenericServiceManager'.
+2014-08-27 17:38:55,846 [8] DEBUG Spring.Objects.Factory.Support.SimpleInstantiationStrategy [(null)] - Generating a subclass of the [MyService.GenericServiceManager] class for the 'GenericServiceManager' object definition for the purposes of method injection.
+2014-08-27 17:38:55,912 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'GenericServiceManager' to allow for resolving potential circular references
+2014-08-27 17:38:55,913 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'GenericServiceManager'
+2014-08-27 17:38:55,915 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'GenericServiceManager'
+2014-08-27 17:38:55,918 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'GenericServiceManager'
+2014-08-27 17:38:55,920 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'GenericServiceManager'
+2014-08-27 17:38:55,922 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'GenericServiceManager'.
+2014-08-27 17:38:55,924 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -          GetObjectInternal: returning instance for objectname GenericServiceManager
+2014-08-27 17:38:55,931 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the name property on the IObjectNameAware object 'jobDetailNonConcurrent'.
+2014-08-27 17:38:55,932 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the ObjectFactory property on the IObjectFactoryAware object 'jobDetailNonConcurrent'.
+2014-08-27 17:38:55,934 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'jobDetailNonConcurrent'
+2014-08-27 17:38:55,935 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'jobDetailNonConcurrent'.
+2014-08-27 17:38:55,944 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'jobDetailNonConcurrent'
+2014-08-27 17:38:55,945 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'jobDetailNonConcurrent'
+2014-08-27 17:38:55,946 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Object with name 'jobDetailNonConcurrent' is a factory object.
+2014-08-27 17:38:55,947 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Dereferencing Object with name 'jobDetailNonConcurrent'
+2014-08-27 17:38:55,948 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'jobDetailNonConcurrent'
+2014-08-27 17:38:55,950 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -       GetObjectInternal: returning instance for objectname jobDetailNonConcurrent
+2014-08-27 17:38:55,953 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the name property on the IObjectNameAware object 'simpleTrigger'.
+2014-08-27 17:38:55,954 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'simpleTrigger'
+2014-08-27 17:38:55,955 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'simpleTrigger'.
+2014-08-27 17:38:55,957 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'simpleTrigger'
+2014-08-27 17:38:55,958 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'simpleTrigger'
+2014-08-27 17:38:55,959 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'simpleTrigger'.
+2014-08-27 17:38:55,964 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname simpleTrigger
+2014-08-27 17:38:55,966 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the name property on the IObjectNameAware object 'ScheduleObject'.
+2014-08-27 17:38:55,967 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'ScheduleObject'
+2014-08-27 17:38:55,969 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'ScheduleObject'.
+2014-08-27 17:38:55,998 [8] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Using default implementation for object serializer
+2014-08-27 17:38:56,026 [8] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Using default implementation for ThreadExecutor
+2014-08-27 17:38:56,059 [8] INFO  Quartz.Core.SchedulerSignalerImpl [(null)] - Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2014-08-27 17:38:56,061 [8] INFO  Quartz.Core.QuartzScheduler [(null)] - Quartz Scheduler v.2.2.4.400 created.
+2014-08-27 17:38:56,064 [8] INFO  Quartz.Simpl.RAMJobStore [(null)] - RAMJobStore initialized.
+2014-08-27 17:38:56,068 [8] INFO  Quartz.Core.QuartzScheduler [(null)] - Scheduler meta-data: Quartz Scheduler (v2.2.4.400) 'ScheduleObject' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2014-08-27 17:38:56,069 [8] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Quartz scheduler 'ScheduleObject' initialized
+2014-08-27 17:38:56,071 [8] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Quartz scheduler version: 2.2.4.400
+2014-08-27 17:38:56,073 [8] INFO  Quartz.Core.QuartzScheduler [(null)] - JobFactory set to: Spring.Scheduling.Quartz.AdaptableJobFactory
+2014-08-27 17:38:56,107 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'ScheduleObject'
+2014-08-27 17:38:56,108 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'ScheduleObject'
+2014-08-27 17:38:56,109 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for IFactoryObject instance for name 'ScheduleObject'.
+2014-08-27 17:38:56,111 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname &ScheduleObject
+2014-08-27 17:38:56,114 [8] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Preinstantiating singletons
+2014-08-27 17:38:56,116 [8] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Pre-instantiating singletons in factory [Spring.Objects.Factory.Support.DefaultListableObjectFactory]
+2014-08-27 17:49:04,764 [10] DEBUG Spring.Context.Support.ContextHandler [(null)] - creating context 'spring.root'
+2014-08-27 17:49:04,806 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Refreshing object factory 
+2014-08-27 17:49:04,835 [10] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader [(null)] - Loading XML object definitions from file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml]
+2014-08-27 17:49:04,848 [10] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader [(null)] - Using the following XmlReader implementation : System.Xml.XsdValidatingReader
+2014-08-27 17:49:04,852 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Loading object definitions.
+2014-08-27 17:49:04,855 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Loading object definitions...
+2014-08-27 17:49:04,856 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default lazy init 'false'.
+2014-08-27 17:49:04,857 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default dependency check 'none'.
+2014-08-27 17:49:04,858 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default autowire 'no'.
+2014-08-27 17:49:04,859 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default merge 'false'.
+2014-08-27 17:49:04,860 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default init method ''.
+2014-08-27 17:49:04,861 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2014-08-27 17:49:04,862 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default autowire candidates ''.
+2014-08-27 17:49:04,863 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default init method ''.
+2014-08-27 17:49:04,863 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2014-08-27 17:49:04,938 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'myJob'.
+2014-08-27 17:49:04,979 [10] WARN  Spring.Objects.Factory.Xml.ObjectsNamespaceParser [(null)] - The 'type' attribute is redundant when the 'name' attribute has been used on a constructor argument element.
+2014-08-27 17:49:04,982 [10] WARN  Spring.Objects.Factory.Xml.ObjectsNamespaceParser [(null)] - The 'type' attribute is redundant when the 'name' attribute has been used on a constructor argument element.
+2014-08-27 17:49:04,983 [10] WARN  Spring.Objects.Factory.Xml.ObjectsNamespaceParser [(null)] - The 'type' attribute is redundant when the 'name' attribute has been used on a constructor argument element.
+2014-08-27 17:49:04,985 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Neither XML 'id' nor 'name' specified - using generated object name [System.Type#2E84EAB]
+2014-08-27 17:49:04,986 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'FindGenericServiceObjects'.
+2014-08-27 17:49:04,988 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'GenericServiceManager'.
+2014-08-27 17:49:05,003 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'jobDetailNonConcurrent'.
+2014-08-27 17:49:05,005 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'simpleTrigger'.
+2014-08-27 17:49:05,007 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'ScheduleObject'.
+2014-08-27 17:49:05,008 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Found 6 <object> elements defining objects.
+2014-08-27 17:49:05,009 [10] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader [(null)] - Loaded 6 object definitions from location [~/Config/spring-objects.xml]
+2014-08-27 17:49:05,010 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - Refreshed ObjectFactory for application context 'spring.root'.
+2014-08-27 17:49:05,011 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Registering well-known processors and objects
+2014-08-27 17:49:05,013 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Custom post processing object factory
+2014-08-27 17:49:05,014 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Post processing object factory using pre-registered processors
+2014-08-27 17:49:05,014 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - 6 objects defined in application context [spring.root].
+2014-08-27 17:49:05,015 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Post processing object factory using defined processors
+2014-08-27 17:49:05,126 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'myJob'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.MyJob, MyService] for object with name 'myJob' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 6 ---> System.TypeLoadException: Could not load type 'MyService.MyJob' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,179 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'FindGenericServiceObjects'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.ServiceLocatorImplementer, MyService] for object with name 'FindGenericServiceObjects' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 11 ---> System.TypeLoadException: Could not load type 'MyService.ServiceLocatorImplementer' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,231 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'myJob'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.MyJob, MyService] for object with name 'myJob' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 6 ---> System.TypeLoadException: Could not load type 'MyService.MyJob' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,281 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'FindGenericServiceObjects'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.ServiceLocatorImplementer, MyService] for object with name 'FindGenericServiceObjects' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 11 ---> System.TypeLoadException: Could not load type 'MyService.ServiceLocatorImplementer' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,334 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'myJob'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.MyJob, MyService] for object with name 'myJob' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 6 ---> System.TypeLoadException: Could not load type 'MyService.MyJob' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,387 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'FindGenericServiceObjects'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.ServiceLocatorImplementer, MyService] for object with name 'FindGenericServiceObjects' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 11 ---> System.TypeLoadException: Could not load type 'MyService.ServiceLocatorImplementer' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,389 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - processed 0 IFactoryObjectPostProcessors defined in application context [spring.root].
+2014-08-27 17:49:05,442 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'myJob'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.MyJob, MyService] for object with name 'myJob' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 6 ---> System.TypeLoadException: Could not load type 'MyService.MyJob' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,491 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'FindGenericServiceObjects'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.ServiceLocatorImplementer, MyService] for object with name 'FindGenericServiceObjects' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 11 ---> System.TypeLoadException: Could not load type 'MyService.ServiceLocatorImplementer' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,541 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'myJob'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.MyJob, MyService] for object with name 'myJob' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 6 ---> System.TypeLoadException: Could not load type 'MyService.MyJob' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,591 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'FindGenericServiceObjects'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.ServiceLocatorImplementer, MyService] for object with name 'FindGenericServiceObjects' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 11 ---> System.TypeLoadException: Could not load type 'MyService.ServiceLocatorImplementer' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,592 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - processed 0 IObjectPostProcessors defined in application context [spring.root].
+2014-08-27 17:49:05,594 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - No IEventRegistry found with name 'eventRegistry' : using default 'Spring.Objects.Events.Support.EventRegistry'.
+2014-08-27 17:49:05,637 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'myJob'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.MyJob, MyService] for object with name 'myJob' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 6 ---> System.TypeLoadException: Could not load type 'MyService.MyJob' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,678 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'FindGenericServiceObjects'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.ServiceLocatorImplementer, MyService] for object with name 'FindGenericServiceObjects' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 11 ---> System.TypeLoadException: Could not load type 'MyService.ServiceLocatorImplementer' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,681 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - No IMessageSource found with name 'messageSource' : using default 'StaticMessageSource : '.
+2014-08-27 17:49:05,724 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'myJob'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.MyJob, MyService] for object with name 'myJob' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 6 ---> System.TypeLoadException: Could not load type 'MyService.MyJob' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,764 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Ignoring object class loading failure for object 'FindGenericServiceObjects'
+Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [MyService.ServiceLocatorImplementer, MyService] for object with name 'FindGenericServiceObjects' defined in file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 11 ---> System.TypeLoadException: Could not load type 'MyService.ServiceLocatorImplementer' from assembly 'MyService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 123
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:line 75
+   at Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:line 91
+   at Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:line 107
+   at Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) in c:\_prj\spring-net\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:line 101
+   at Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:line 704
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1202
+   --- End of inner exception stack trace ---
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:line 1206
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PredictObjectType(String objectName, RootObjectDefinition mod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:line 160
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.IsFactoryObject(String objectName, RootObjectDefinition rod) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1128
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.DoGetObjectNamesForType(Type type, Boolean includeNonSingletons, Boolean allowEagerInit) in c:\_prj\spring-net\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:line 1040
+2014-08-27 17:49:05,766 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name &ScheduleObject => canonical name ScheduleObject
+2014-08-27 17:49:05,768 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'ScheduleObject'
+2014-08-27 17:49:05,770 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'ScheduleObject' with merged definition [RootObjectDefinition : Class [Spring.Scheduling.Quartz.SchedulerFactoryObject]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 42].
+2014-08-27 17:49:05,772 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'ScheduleObject'.
+2014-08-27 17:49:05,775 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'ScheduleObject' to allow for resolving potential circular references
+2014-08-27 17:49:05,776 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'ScheduleObject'
+2014-08-27 17:49:05,781 [10] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'triggers[0]' in object 'ScheduleObject' to object 'simpleTrigger'.
+2014-08-27 17:49:05,782 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name simpleTrigger => canonical name simpleTrigger
+2014-08-27 17:49:05,783 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'simpleTrigger'
+2014-08-27 17:49:05,784 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'simpleTrigger' with merged definition [RootObjectDefinition : Class [Spring.Scheduling.Quartz.SimpleTriggerObject]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 33].
+2014-08-27 17:49:05,785 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'simpleTrigger'.
+2014-08-27 17:49:05,787 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'simpleTrigger' to allow for resolving potential circular references
+2014-08-27 17:49:05,787 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'simpleTrigger'
+2014-08-27 17:49:05,788 [10] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'jobDetail' in object 'simpleTrigger' to object 'jobDetailNonConcurrent'.
+2014-08-27 17:49:05,789 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -          GetObjectInternal: obtaining instance for name jobDetailNonConcurrent => canonical name jobDetailNonConcurrent
+2014-08-27 17:49:05,790 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'jobDetailNonConcurrent'
+2014-08-27 17:49:05,791 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'jobDetailNonConcurrent' with merged definition [RootObjectDefinition : Class [Spring.Scheduling.Quartz.MethodInvokingJobDetailFactoryObject]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 26].
+2014-08-27 17:49:05,792 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'jobDetailNonConcurrent'.
+2014-08-27 17:49:05,794 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'jobDetailNonConcurrent' to allow for resolving potential circular references
+2014-08-27 17:49:05,795 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'jobDetailNonConcurrent'
+2014-08-27 17:49:05,796 [10] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'targetObject' in object 'jobDetailNonConcurrent' to object 'GenericServiceManager'.
+2014-08-27 17:49:05,797 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -             GetObjectInternal: obtaining instance for name GenericServiceManager => canonical name GenericServiceManager
+2014-08-27 17:49:05,798 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'GenericServiceManager'
+2014-08-27 17:49:05,799 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'GenericServiceManager' with merged definition [RootObjectDefinition : Class [MyService.GenericServiceManager]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 22].
+2014-08-27 17:49:05,800 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'GenericServiceManager'.
+2014-08-27 17:49:05,801 [10] DEBUG Spring.Objects.Factory.Support.SimpleInstantiationStrategy [(null)] - Generating a subclass of the [MyService.GenericServiceManager] class for the 'GenericServiceManager' object definition for the purposes of method injection.
+2014-08-27 17:49:05,850 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'GenericServiceManager' to allow for resolving potential circular references
+2014-08-27 17:49:05,851 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'GenericServiceManager'
+2014-08-27 17:49:05,853 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'GenericServiceManager'
+2014-08-27 17:49:05,856 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'GenericServiceManager'
+2014-08-27 17:49:05,857 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'GenericServiceManager'
+2014-08-27 17:49:05,859 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'GenericServiceManager'.
+2014-08-27 17:49:05,861 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -          GetObjectInternal: returning instance for objectname GenericServiceManager
+2014-08-27 17:49:05,868 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the name property on the IObjectNameAware object 'jobDetailNonConcurrent'.
+2014-08-27 17:49:05,870 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the ObjectFactory property on the IObjectFactoryAware object 'jobDetailNonConcurrent'.
+2014-08-27 17:49:05,871 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'jobDetailNonConcurrent'
+2014-08-27 17:49:05,872 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'jobDetailNonConcurrent'.
+2014-08-27 17:49:05,880 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'jobDetailNonConcurrent'
+2014-08-27 17:49:05,882 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'jobDetailNonConcurrent'
+2014-08-27 17:49:05,883 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Object with name 'jobDetailNonConcurrent' is a factory object.
+2014-08-27 17:49:05,884 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Dereferencing Object with name 'jobDetailNonConcurrent'
+2014-08-27 17:49:05,885 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'jobDetailNonConcurrent'
+2014-08-27 17:49:05,887 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -       GetObjectInternal: returning instance for objectname jobDetailNonConcurrent
+2014-08-27 17:49:05,890 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the name property on the IObjectNameAware object 'simpleTrigger'.
+2014-08-27 17:49:05,891 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'simpleTrigger'
+2014-08-27 17:49:05,892 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'simpleTrigger'.
+2014-08-27 17:49:05,895 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'simpleTrigger'
+2014-08-27 17:49:05,897 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'simpleTrigger'
+2014-08-27 17:49:05,898 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'simpleTrigger'.
+2014-08-27 17:49:05,899 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname simpleTrigger
+2014-08-27 17:49:05,905 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the name property on the IObjectNameAware object 'ScheduleObject'.
+2014-08-27 17:49:05,906 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'ScheduleObject'
+2014-08-27 17:49:05,908 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'ScheduleObject'.
+2014-08-27 17:49:05,936 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Using default implementation for object serializer
+2014-08-27 17:49:05,962 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Using default implementation for ThreadExecutor
+2014-08-27 17:49:05,986 [10] INFO  Quartz.Core.SchedulerSignalerImpl [(null)] - Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2014-08-27 17:49:05,988 [10] INFO  Quartz.Core.QuartzScheduler [(null)] - Quartz Scheduler v.2.2.4.400 created.
+2014-08-27 17:49:05,990 [10] INFO  Quartz.Simpl.RAMJobStore [(null)] - RAMJobStore initialized.
+2014-08-27 17:49:05,994 [10] INFO  Quartz.Core.QuartzScheduler [(null)] - Scheduler meta-data: Quartz Scheduler (v2.2.4.400) 'ScheduleObject' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2014-08-27 17:49:05,996 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Quartz scheduler 'ScheduleObject' initialized
+2014-08-27 17:49:05,997 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Quartz scheduler version: 2.2.4.400
+2014-08-27 17:49:05,999 [10] INFO  Quartz.Core.QuartzScheduler [(null)] - JobFactory set to: Spring.Scheduling.Quartz.AdaptableJobFactory
+2014-08-27 17:49:06,017 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'ScheduleObject'
+2014-08-27 17:49:06,018 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'ScheduleObject'
+2014-08-27 17:49:06,019 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for IFactoryObject instance for name 'ScheduleObject'.
+2014-08-27 17:49:06,021 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname &ScheduleObject
+2014-08-27 17:49:06,023 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Preinstantiating singletons
+2014-08-27 17:49:06,025 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Pre-instantiating singletons in factory [Spring.Objects.Factory.Support.DefaultListableObjectFactory]
+2014-08-27 17:50:14,158 [9] DEBUG Spring.Context.Support.ContextHandler [(null)] - creating context 'spring.root'
+2014-08-27 17:50:14,206 [9] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Refreshing object factory 
+2014-08-27 17:50:14,229 [9] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader [(null)] - Loading XML object definitions from file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml]
+2014-08-27 17:50:14,242 [9] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader [(null)] - Using the following XmlReader implementation : System.Xml.XsdValidatingReader
+2014-08-27 17:50:14,247 [9] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Loading object definitions.
+2014-08-27 17:50:14,249 [9] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Loading object definitions...
+2014-08-27 17:50:14,250 [9] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default lazy init 'false'.
+2014-08-27 17:50:14,251 [9] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default dependency check 'none'.
+2014-08-27 17:50:14,252 [9] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default autowire 'no'.
+2014-08-27 17:50:14,253 [9] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default merge 'false'.
+2014-08-27 17:50:14,254 [9] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default init method ''.
+2014-08-27 17:50:14,255 [9] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2014-08-27 17:50:14,256 [9] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default autowire candidates ''.
+2014-08-27 17:50:14,257 [9] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default init method ''.
+2014-08-27 17:50:14,257 [9] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2014-08-27 17:50:14,278 [9] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'myJob'.
+2014-08-27 17:50:14,338 [9] WARN  Spring.Objects.Factory.Xml.ObjectsNamespaceParser [(null)] - The 'type' attribute is redundant when the 'name' attribute has been used on a constructor argument element.
+2014-08-27 17:50:14,340 [9] WARN  Spring.Objects.Factory.Xml.ObjectsNamespaceParser [(null)] - The 'type' attribute is redundant when the 'name' attribute has been used on a constructor argument element.
+2014-08-27 17:50:14,342 [9] WARN  Spring.Objects.Factory.Xml.ObjectsNamespaceParser [(null)] - The 'type' attribute is redundant when the 'name' attribute has been used on a constructor argument element.
+2014-08-27 17:50:14,343 [9] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Neither XML 'id' nor 'name' specified - using generated object name [System.Type#E852CD]
+2014-08-27 17:50:14,344 [9] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'FindGenericServiceObjects'.
+2014-08-27 17:50:14,382 [9] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'GenericServiceManager'.
+2014-08-27 17:50:14,388 [9] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'jobDetailNonConcurrent'.
+2014-08-27 17:50:14,391 [9] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'simpleTrigger'.
+2014-08-27 17:50:14,393 [9] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'ScheduleObject'.
+2014-08-27 17:50:14,394 [9] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Found 6 <object> elements defining objects.
+2014-08-27 17:50:14,395 [9] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader [(null)] - Loaded 6 object definitions from location [~/Config/spring-objects.xml]
+2014-08-27 17:50:14,396 [9] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - Refreshed ObjectFactory for application context 'spring.root'.
+2014-08-27 17:50:14,397 [9] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Registering well-known processors and objects
+2014-08-27 17:50:14,399 [9] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Custom post processing object factory
+2014-08-27 17:50:14,400 [9] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Post processing object factory using pre-registered processors

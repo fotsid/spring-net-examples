@@ -1,0 +1,321 @@
+2014-08-28 09:50:35,700 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -       GetObjectInternal: returning instance for objectname jobDetailNonConcurrent
+2014-08-28 09:50:35,719 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the name property on the IObjectNameAware object 'simpleTrigger'.
+2014-08-28 09:50:35,720 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'simpleTrigger'
+2014-08-28 09:50:35,722 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'simpleTrigger'.
+2014-08-28 09:50:35,724 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'simpleTrigger'
+2014-08-28 09:50:35,725 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'simpleTrigger'
+2014-08-28 09:50:35,726 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'simpleTrigger'.
+2014-08-28 09:50:35,727 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname simpleTrigger
+2014-08-28 09:50:35,729 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the name property on the IObjectNameAware object 'ScheduleObject'.
+2014-08-28 09:50:35,730 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'ScheduleObject'
+2014-08-28 09:50:35,731 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'ScheduleObject'.
+2014-08-28 09:50:35,757 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Using default implementation for object serializer
+2014-08-28 09:50:35,785 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Using default implementation for ThreadExecutor
+2014-08-28 09:50:35,812 [10] INFO  Quartz.Core.SchedulerSignalerImpl [(null)] - Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2014-08-28 09:50:35,814 [10] INFO  Quartz.Core.QuartzScheduler [(null)] - Quartz Scheduler v.2.2.4.400 created.
+2014-08-28 09:50:35,817 [10] INFO  Quartz.Simpl.RAMJobStore [(null)] - RAMJobStore initialized.
+2014-08-28 09:50:35,821 [10] INFO  Quartz.Core.QuartzScheduler [(null)] - Scheduler meta-data: Quartz Scheduler (v2.2.4.400) 'ScheduleObject' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2014-08-28 09:50:35,823 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Quartz scheduler 'ScheduleObject' initialized
+2014-08-28 09:50:35,824 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Quartz scheduler version: 2.2.4.400
+2014-08-28 09:50:35,826 [10] INFO  Quartz.Core.QuartzScheduler [(null)] - JobFactory set to: Spring.Scheduling.Quartz.AdaptableJobFactory
+2014-08-28 09:50:35,843 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'ScheduleObject'
+2014-08-28 09:50:35,845 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'ScheduleObject'
+2014-08-28 09:50:35,846 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for IFactoryObject instance for name 'ScheduleObject'.
+2014-08-28 09:50:35,849 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname &ScheduleObject
+2014-08-28 09:50:35,852 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Preinstantiating singletons
+2014-08-28 09:50:35,853 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Pre-instantiating singletons in factory [Spring.Objects.Factory.Support.DefaultListableObjectFactory]
+2014-08-28 09:50:35,854 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name myJob => canonical name myJob
+2014-08-28 09:50:35,855 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'myJob'
+2014-08-28 09:50:35,856 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'myJob' with merged definition [RootObjectDefinition : Class [MyService.MyJob]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 6].
+2014-08-28 09:50:35,857 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'myJob'.
+2014-08-28 09:50:35,858 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'myJob' to allow for resolving potential circular references
+2014-08-28 09:50:35,860 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'myJob'
+2014-08-28 09:50:35,860 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'myJob'
+2014-08-28 09:50:35,862 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'myJob'
+2014-08-28 09:50:35,863 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'myJob'
+2014-08-28 09:50:35,864 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'myJob'.
+2014-08-28 09:50:35,865 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname myJob
+2014-08-28 09:50:35,866 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name FindGenericServiceObjects => canonical name FindGenericServiceObjects
+2014-08-28 09:50:35,867 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'FindGenericServiceObjects'
+2014-08-28 09:50:35,868 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'FindGenericServiceObjects' with merged definition [RootObjectDefinition : Class [MyService.ServiceLocatorImplementer]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 11].
+2014-08-28 09:50:35,868 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'FindGenericServiceObjects'.
+2014-08-28 09:50:35,887 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'System.Type#1803BC6' with merged definition [RootObjectDefinition : Class [System.Type]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = GetType; FactoryObjectName = ; defined in = file [C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 13].
+2014-08-28 09:50:35,889 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'System.Type#1803BC6'.
+2014-08-28 09:50:35,894 [10] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'System.Type#1803BC6' instantiated via factory method [System.Type GetType(System.String, Boolean, Boolean)].
+2014-08-28 09:50:35,895 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'System.Type#1803BC6'
+2014-08-28 09:50:35,896 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'System.Type#1803BC6'
+2014-08-28 09:50:35,897 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'System.Type#1803BC6'
+2014-08-28 09:50:35,898 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'System.Type#1803BC6'.
+2014-08-28 09:50:35,900 [10] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'FindGenericServiceObjects' instantiated via constructor [Void .ctor(System.Type)].
+2014-08-28 09:50:35,901 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'FindGenericServiceObjects' to allow for resolving potential circular references
+2014-08-28 09:50:35,902 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'FindGenericServiceObjects'
+2014-08-28 09:50:35,903 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'FindGenericServiceObjects'
+2014-08-28 09:50:35,904 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'FindGenericServiceObjects'
+2014-08-28 09:50:35,905 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'FindGenericServiceObjects'
+2014-08-28 09:50:35,905 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'FindGenericServiceObjects'.
+2014-08-28 09:50:35,906 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname FindGenericServiceObjects
+2014-08-28 09:50:35,908 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - Publishing event in context [spring.root] : ContextRefreshedEventArgs [Refreshed]
+2014-08-28 09:50:35,910 [10] INFO  Spring.Scheduling.Quartz.SchedulerFactoryObject [(null)] - Starting Quartz Scheduler now
+2014-08-28 09:50:35,912 [10] INFO  Quartz.Core.QuartzScheduler [(null)] - Scheduler ScheduleObject_$_NON_CLUSTERED started.
+2014-08-28 09:50:35,914 [10] INFO  Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2014-08-28 09:50:35,915 [10] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Registering context 'Spring.Context.Support.XmlApplicationContext' under name 'spring.root'.
+2014-08-28 09:50:35,916 [10] DEBUG Spring.Context.Support.ContextHandler [(null)] - context 'Spring.Context.Support.XmlApplicationContext' created for name 'spring.root'
+2014-08-28 09:50:35,918 [10] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+2014-08-28 09:50:35,919 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name ScheduleObject => canonical name ScheduleObject
+2014-08-28 09:50:35,920 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'ScheduleObject'.
+2014-08-28 09:50:35,921 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Object with name 'ScheduleObject' is a factory object.
+2014-08-28 09:50:35,921 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Dereferencing Object with name 'ScheduleObject'
+2014-08-28 09:50:35,922 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'ScheduleObject'
+2014-08-28 09:50:35,923 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname ScheduleObject
+2014-08-28 09:50:35,936 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name FindGenericServiceObjects => canonical name FindGenericServiceObjects
+2014-08-28 09:50:35,948 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'FindGenericServiceObjects'.
+2014-08-28 09:50:35,949 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'FindGenericServiceObjects'.
+2014-08-28 09:50:35,950 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname FindGenericServiceObjects
+2014-08-28 09:50:35,951 [ScheduleObject_Worker-1] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+2014-08-28 09:50:35,953 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name myJob => canonical name myJob
+2014-08-28 09:50:35,955 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'myJob'.
+2014-08-28 09:50:35,956 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'myJob'.
+2014-08-28 09:50:35,957 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname myJob
+2014-08-28 09:50:39,386 [ScheduleObject_Worker-1] INFO  MyService.IGenericService [(null)] - Job 1 Executed !!!!
+2014-08-28 09:50:42,654 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name FindGenericServiceObjects => canonical name FindGenericServiceObjects
+2014-08-28 09:50:42,656 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'FindGenericServiceObjects'.
+2014-08-28 09:50:42,658 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'FindGenericServiceObjects'.
+2014-08-28 09:50:42,659 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname FindGenericServiceObjects
+2014-08-28 09:50:42,660 [ScheduleObject_Worker-2] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+2014-08-28 09:50:42,670 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name myJob => canonical name myJob
+2014-08-28 09:50:42,671 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'myJob'.
+2014-08-28 09:50:42,672 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'myJob'.
+2014-08-28 09:50:42,673 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname myJob
+2014-08-28 09:50:47,129 [ScheduleObject_Worker-2] INFO  MyService.IGenericService [(null)] - Job 1 Executed !!!!
+2014-08-28 09:50:47,136 [ScheduleObject_Worker-3] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name FindGenericServiceObjects => canonical name FindGenericServiceObjects
+2014-08-28 09:50:47,139 [ScheduleObject_Worker-3] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'FindGenericServiceObjects'.
+2014-08-28 09:50:47,175 [ScheduleObject_Worker-3] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'FindGenericServiceObjects'.
+2014-08-28 09:50:47,185 [ScheduleObject_Worker-3] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname FindGenericServiceObjects
+2014-08-28 09:50:47,188 [ScheduleObject_Worker-3] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+2014-08-28 09:50:47,191 [ScheduleObject_Worker-3] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name myJob => canonical name myJob
+2014-08-28 09:50:47,194 [ScheduleObject_Worker-3] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'myJob'.
+2014-08-28 09:50:47,196 [ScheduleObject_Worker-3] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'myJob'.
+2014-08-28 09:50:47,200 [ScheduleObject_Worker-3] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname myJob
+2014-08-28 09:50:47,202 [ScheduleObject_Worker-3] INFO  MyService.IGenericService [(null)] - Job 1 Executed !!!!
+2014-08-28 09:50:50,723 [ScheduleObject_Worker-4] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name FindGenericServiceObjects => canonical name FindGenericServiceObjects
+2014-08-28 09:50:50,725 [ScheduleObject_Worker-4] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'FindGenericServiceObjects'.
+2014-08-28 09:50:50,727 [ScheduleObject_Worker-4] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'FindGenericServiceObjects'.
+2014-08-28 09:50:50,729 [ScheduleObject_Worker-4] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname FindGenericServiceObjects
+2014-08-28 09:50:50,730 [ScheduleObject_Worker-4] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+2014-08-28 09:50:50,732 [ScheduleObject_Worker-4] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name myJob => canonical name myJob
+2014-08-28 09:50:50,733 [ScheduleObject_Worker-4] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'myJob'.
+2014-08-28 09:50:50,735 [ScheduleObject_Worker-4] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'myJob'.
+2014-08-28 09:50:50,736 [ScheduleObject_Worker-4] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname myJob
+2014-08-28 09:50:50,738 [ScheduleObject_Worker-4] INFO  MyService.IGenericService [(null)] - Job 1 Executed !!!!
+2014-08-28 09:50:55,723 [ScheduleObject_Worker-5] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name FindGenericServiceObjects => canonical name FindGenericServiceObjects
+2014-08-28 09:50:55,725 [ScheduleObject_Worker-5] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'FindGenericServiceObjects'.
+2014-08-28 09:50:55,727 [ScheduleObject_Worker-5] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'FindGenericServiceObjects'.
+2014-08-28 09:50:55,728 [ScheduleObject_Worker-5] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname FindGenericServiceObjects
+2014-08-28 09:50:55,730 [ScheduleObject_Worker-5] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+2014-08-28 09:50:55,731 [ScheduleObject_Worker-5] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name myJob => canonical name myJob
+2014-08-28 09:50:55,733 [ScheduleObject_Worker-5] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'myJob'.
+2014-08-28 09:50:55,734 [ScheduleObject_Worker-5] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'myJob'.
+2014-08-28 09:50:55,735 [ScheduleObject_Worker-5] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname myJob
+2014-08-28 09:50:55,736 [ScheduleObject_Worker-5] INFO  MyService.IGenericService [(null)] - Job 1 Executed !!!!
+2014-08-28 09:51:00,723 [ScheduleObject_Worker-6] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name FindGenericServiceObjects => canonical name FindGenericServiceObjects
+2014-08-28 09:51:00,725 [ScheduleObject_Worker-6] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'FindGenericServiceObjects'.
+2014-08-28 09:51:00,727 [ScheduleObject_Worker-6] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'FindGenericServiceObjects'.
+2014-08-28 09:51:00,728 [ScheduleObject_Worker-6] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname FindGenericServiceObjects
+2014-08-28 09:51:00,730 [ScheduleObject_Worker-6] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+2014-08-28 09:51:00,731 [ScheduleObject_Worker-6] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name myJob => canonical name myJob
+2014-08-28 09:51:00,732 [ScheduleObject_Worker-6] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'myJob'.
+2014-08-28 09:51:00,734 [ScheduleObject_Worker-6] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'myJob'.
+2014-08-28 09:51:00,735 [ScheduleObject_Worker-6] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname myJob
+2014-08-28 09:51:02,549 [ScheduleObject_Worker-6] INFO  MyService.IGenericService [(null)] - Job 1 Executed !!!!
+2014-08-28 09:51:05,723 [ScheduleObject_Worker-7] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name FindGenericServiceObjects => canonical name FindGenericServiceObjects
+2014-08-28 09:51:05,725 [ScheduleObject_Worker-7] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'FindGenericServiceObjects'.
+2014-08-28 09:51:05,727 [ScheduleObject_Worker-7] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'FindGenericServiceObjects'.
+2014-08-28 09:51:05,728 [ScheduleObject_Worker-7] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname FindGenericServiceObjects
+2014-08-28 09:51:05,730 [ScheduleObject_Worker-7] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+2014-08-28 09:51:05,731 [ScheduleObject_Worker-7] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name myJob => canonical name myJob
+2014-08-28 09:51:05,733 [ScheduleObject_Worker-7] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'myJob'.
+2014-08-28 09:51:05,735 [ScheduleObject_Worker-7] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'myJob'.
+2014-08-28 09:51:05,737 [ScheduleObject_Worker-7] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname myJob
+2014-08-28 09:51:05,739 [ScheduleObject_Worker-7] INFO  MyService.IGenericService [(null)] - Job 1 Executed !!!!
+2014-08-28 11:26:32,843 [10] DEBUG Spring.Context.Support.ContextHandler [(null)] - creating context 'spring.root'
+2014-08-28 11:26:32,882 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Refreshing object factory 
+2014-08-28 11:26:32,902 [10] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader [(null)] - Loading XML object definitions from file [C:\Users\fsideris\Documents\Visual Studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml]
+2014-08-28 11:26:32,915 [10] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader [(null)] - Using the following XmlReader implementation : System.Xml.XsdValidatingReader
+2014-08-28 11:26:32,920 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Loading object definitions.
+2014-08-28 11:26:32,922 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Loading object definitions...
+2014-08-28 11:26:32,924 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default lazy init 'false'.
+2014-08-28 11:26:32,925 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default dependency check 'none'.
+2014-08-28 11:26:32,925 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default autowire 'no'.
+2014-08-28 11:26:32,926 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default merge 'false'.
+2014-08-28 11:26:32,927 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default init method ''.
+2014-08-28 11:26:32,928 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2014-08-28 11:26:32,929 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default autowire candidates ''.
+2014-08-28 11:26:32,930 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default init method ''.
+2014-08-28 11:26:32,930 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Default destroy method ''.
+2014-08-28 11:26:32,957 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'myJob'.
+2014-08-28 11:26:32,962 [10] WARN  Spring.Objects.Factory.Xml.ObjectsNamespaceParser [(null)] - The 'type' attribute is redundant when the 'name' attribute has been used on a constructor argument element.
+2014-08-28 11:26:32,966 [10] WARN  Spring.Objects.Factory.Xml.ObjectsNamespaceParser [(null)] - The 'type' attribute is redundant when the 'name' attribute has been used on a constructor argument element.
+2014-08-28 11:26:32,967 [10] WARN  Spring.Objects.Factory.Xml.ObjectsNamespaceParser [(null)] - The 'type' attribute is redundant when the 'name' attribute has been used on a constructor argument element.
+2014-08-28 11:26:32,969 [10] DEBUG Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper [(null)] - Neither XML 'id' nor 'name' specified - using generated object name [System.Type#2E84EAB]
+2014-08-28 11:26:32,971 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'FindGenericServiceObjects'.
+2014-08-28 11:26:32,973 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'genericServiceManager'.
+2014-08-28 11:26:32,989 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'jobDetailNonConcurrent'.
+2014-08-28 11:26:32,993 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'simpleTrigger'.
+2014-08-28 11:26:32,995 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Registering object definition with id 'ScheduleObject'.
+2014-08-28 11:26:32,996 [10] DEBUG Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader [(null)] - Found 6 <object> elements defining objects.
+2014-08-28 11:26:32,997 [10] DEBUG Spring.Objects.Factory.Xml.XmlObjectDefinitionReader [(null)] - Loaded 6 object definitions from location [~/Config/spring-objects.xml]
+2014-08-28 11:26:32,999 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - Refreshed ObjectFactory for application context 'spring.root'.
+2014-08-28 11:26:33,000 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Registering well-known processors and objects
+2014-08-28 11:26:33,002 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Custom post processing object factory
+2014-08-28 11:26:33,003 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Post processing object factory using pre-registered processors
+2014-08-28 11:26:33,004 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - 6 objects defined in application context [spring.root].
+2014-08-28 11:26:33,004 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Post processing object factory using defined processors
+2014-08-28 11:26:33,018 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - processed 0 IFactoryObjectPostProcessors defined in application context [spring.root].
+2014-08-28 11:26:33,020 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - processed 0 IObjectPostProcessors defined in application context [spring.root].
+2014-08-28 11:26:33,022 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - No IEventRegistry found with name 'eventRegistry' : using default 'Spring.Objects.Events.Support.EventRegistry'.
+2014-08-28 11:26:33,025 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - No IMessageSource found with name 'messageSource' : using default 'StaticMessageSource : '.
+2014-08-28 11:26:33,028 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name &ScheduleObject => canonical name ScheduleObject
+2014-08-28 11:26:33,031 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'ScheduleObject'
+2014-08-28 11:26:33,033 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'ScheduleObject' with merged definition [RootObjectDefinition : Class [Spring.Scheduling.Quartz.SchedulerFactoryObject]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\Documents\Visual Studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 37].
+2014-08-28 11:26:33,035 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'ScheduleObject'.
+2014-08-28 11:26:33,038 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'ScheduleObject' to allow for resolving potential circular references
+2014-08-28 11:26:33,040 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'ScheduleObject'
+2014-08-28 11:26:33,044 [10] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'triggers[0]' in object 'ScheduleObject' to object 'simpleTrigger'.
+2014-08-28 11:26:33,046 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name simpleTrigger => canonical name simpleTrigger
+2014-08-28 11:26:33,047 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'simpleTrigger'
+2014-08-28 11:26:33,048 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'simpleTrigger' with merged definition [RootObjectDefinition : Class [Spring.Scheduling.Quartz.SimpleTriggerObject]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\Documents\Visual Studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 30].
+2014-08-28 11:26:33,049 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'simpleTrigger'.
+2014-08-28 11:26:33,050 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'simpleTrigger' to allow for resolving potential circular references
+2014-08-28 11:26:33,051 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'simpleTrigger'
+2014-08-28 11:26:33,052 [10] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'jobDetail' in object 'simpleTrigger' to object 'jobDetailNonConcurrent'.
+2014-08-28 11:26:33,053 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -          GetObjectInternal: obtaining instance for name jobDetailNonConcurrent => canonical name jobDetailNonConcurrent
+2014-08-28 11:26:33,054 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'jobDetailNonConcurrent'
+2014-08-28 11:26:33,055 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'jobDetailNonConcurrent' with merged definition [RootObjectDefinition : Class [Spring.Scheduling.Quartz.MethodInvokingJobDetailFactoryObject]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\Documents\Visual Studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 24].
+2014-08-28 11:26:33,056 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'jobDetailNonConcurrent'.
+2014-08-28 11:26:33,057 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'jobDetailNonConcurrent' to allow for resolving potential circular references
+2014-08-28 11:26:33,058 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'jobDetailNonConcurrent'
+2014-08-28 11:26:33,059 [10] DEBUG Spring.Objects.Factory.Support.ObjectDefinitionValueResolver [(null)] - Resolving reference from property 'targetObject' in object 'jobDetailNonConcurrent' to object 'genericServiceManager'.
+2014-08-28 11:26:33,060 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -             GetObjectInternal: obtaining instance for name genericServiceManager => canonical name genericServiceManager
+2014-08-28 11:26:33,061 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'genericServiceManager'
+2014-08-28 11:26:33,062 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'genericServiceManager' with merged definition [RootObjectDefinition : Class [MyService.GenericServiceManager]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\Documents\Visual Studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 20].
+2014-08-28 11:26:33,063 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'genericServiceManager'.
+2014-08-28 11:26:33,065 [10] DEBUG Spring.Objects.Factory.Support.SimpleInstantiationStrategy [(null)] - Generating a subclass of the [MyService.GenericServiceManager] class for the 'genericServiceManager' object definition for the purposes of method injection.
+2014-08-28 11:26:33,113 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'genericServiceManager' to allow for resolving potential circular references
+2014-08-28 11:26:33,114 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'genericServiceManager'
+2014-08-28 11:26:33,116 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'genericServiceManager'
+2014-08-28 11:26:33,119 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'genericServiceManager'
+2014-08-28 11:26:33,120 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'genericServiceManager'
+2014-08-28 11:26:33,122 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'genericServiceManager'.
+2014-08-28 11:26:33,123 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -          GetObjectInternal: returning instance for objectname genericServiceManager
+2014-08-28 11:26:33,130 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the name property on the IObjectNameAware object 'jobDetailNonConcurrent'.
+2014-08-28 11:26:33,132 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the ObjectFactory property on the IObjectFactoryAware object 'jobDetailNonConcurrent'.
+2014-08-28 11:26:33,133 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'jobDetailNonConcurrent'
+2014-08-28 11:26:33,134 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'jobDetailNonConcurrent'.
+2014-08-28 11:26:33,143 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'jobDetailNonConcurrent'
+2014-08-28 11:26:33,144 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'jobDetailNonConcurrent'
+2014-08-28 11:26:33,145 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Object with name 'jobDetailNonConcurrent' is a factory object.
+2014-08-28 11:26:33,146 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Dereferencing Object with name 'jobDetailNonConcurrent'
+2014-08-28 11:26:33,147 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'jobDetailNonConcurrent'
+2014-08-28 11:26:33,149 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -       GetObjectInternal: returning instance for objectname jobDetailNonConcurrent
+2014-08-28 11:26:33,152 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the name property on the IObjectNameAware object 'simpleTrigger'.
+2014-08-28 11:26:33,153 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'simpleTrigger'
+2014-08-28 11:26:33,154 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'simpleTrigger'.
+2014-08-28 11:26:33,157 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'simpleTrigger'
+2014-08-28 11:26:33,158 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'simpleTrigger'
+2014-08-28 11:26:33,159 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'simpleTrigger'.
+2014-08-28 11:26:33,160 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname simpleTrigger
+2014-08-28 11:26:33,162 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Setting the name property on the IObjectNameAware object 'ScheduleObject'.
+2014-08-28 11:26:33,163 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'ScheduleObject'
+2014-08-28 11:26:33,164 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling AfterPropertiesSet() on object with name 'ScheduleObject'.
+2014-08-28 11:26:33,195 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Using default implementation for object serializer
+2014-08-28 11:26:33,222 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Using default implementation for ThreadExecutor
+2014-08-28 11:26:33,252 [10] INFO  Quartz.Core.SchedulerSignalerImpl [(null)] - Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2014-08-28 11:26:33,255 [10] INFO  Quartz.Core.QuartzScheduler [(null)] - Quartz Scheduler v.2.2.4.400 created.
+2014-08-28 11:26:33,259 [10] INFO  Quartz.Simpl.RAMJobStore [(null)] - RAMJobStore initialized.
+2014-08-28 11:26:33,263 [10] INFO  Quartz.Core.QuartzScheduler [(null)] - Scheduler meta-data: Quartz Scheduler (v2.2.4.400) 'ScheduleObject' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2014-08-28 11:26:33,264 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Quartz scheduler 'ScheduleObject' initialized
+2014-08-28 11:26:33,265 [10] INFO  Quartz.Impl.StdSchedulerFactory [(null)] - Quartz scheduler version: 2.2.4.400
+2014-08-28 11:26:33,267 [10] INFO  Quartz.Core.QuartzScheduler [(null)] - JobFactory set to: Spring.Scheduling.Quartz.AdaptableJobFactory
+2014-08-28 11:26:33,285 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'ScheduleObject'
+2014-08-28 11:26:33,286 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'ScheduleObject'
+2014-08-28 11:26:33,287 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for IFactoryObject instance for name 'ScheduleObject'.
+2014-08-28 11:26:33,289 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname &ScheduleObject
+2014-08-28 11:26:33,292 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Preinstantiating singletons
+2014-08-28 11:26:33,293 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Pre-instantiating singletons in factory [Spring.Objects.Factory.Support.DefaultListableObjectFactory]
+2014-08-28 11:26:33,294 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name myJob => canonical name myJob
+2014-08-28 11:26:33,296 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'myJob'
+2014-08-28 11:26:33,297 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'myJob' with merged definition [RootObjectDefinition : Class [MyService.MyJob]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\Documents\Visual Studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 6].
+2014-08-28 11:26:33,298 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'myJob'.
+2014-08-28 11:26:33,299 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'myJob' to allow for resolving potential circular references
+2014-08-28 11:26:33,301 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'myJob'
+2014-08-28 11:26:33,302 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'myJob'
+2014-08-28 11:26:33,303 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'myJob'
+2014-08-28 11:26:33,304 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'myJob'
+2014-08-28 11:26:33,305 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'myJob'.
+2014-08-28 11:26:33,306 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname myJob
+2014-08-28 11:26:33,308 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name FindGenericServiceObjects => canonical name FindGenericServiceObjects
+2014-08-28 11:26:33,309 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating shared instance of singleton object 'FindGenericServiceObjects'
+2014-08-28 11:26:33,318 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'FindGenericServiceObjects' with merged definition [RootObjectDefinition : Class [MyService.ServiceLocatorImplementer]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ; defined in = file [C:\Users\fsideris\Documents\Visual Studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 10].
+2014-08-28 11:26:33,320 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'FindGenericServiceObjects'.
+2014-08-28 11:26:33,324 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Creating instance of Object 'System.Type#2E84EAB' with merged definition [RootObjectDefinition : Class [System.Type]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = No; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = GetType; FactoryObjectName = ; defined in = file [C:\Users\fsideris\Documents\Visual Studio 2012\Projects\Quartz.net Windows Service\Quartz.net Windows Service\bin\Debug\Config\spring-objects.xml] line 12].
+2014-08-28 11:26:33,326 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'System.Type#2E84EAB'.
+2014-08-28 11:26:33,332 [10] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'System.Type#2E84EAB' instantiated via factory method [System.Type GetType(System.String, Boolean, Boolean)].
+2014-08-28 11:26:33,337 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'System.Type#2E84EAB'
+2014-08-28 11:26:33,339 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'System.Type#2E84EAB'
+2014-08-28 11:26:33,340 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'System.Type#2E84EAB'
+2014-08-28 11:26:33,341 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'System.Type#2E84EAB'.
+2014-08-28 11:26:33,344 [10] DEBUG Spring.Objects.Factory.Support.ConstructorResolver [(null)] - Object 'FindGenericServiceObjects' instantiated via constructor [Void .ctor(System.Type)].
+2014-08-28 11:26:33,345 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Eagerly caching object 'FindGenericServiceObjects' to allow for resolving potential circular references
+2014-08-28 11:26:33,346 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Configuring object using definition 'FindGenericServiceObjects'
+2014-08-28 11:26:33,348 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors before initialization of object 'FindGenericServiceObjects'
+2014-08-28 11:26:33,349 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'FindGenericServiceObjects'
+2014-08-28 11:26:33,350 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Cached shared instance of singleton object 'FindGenericServiceObjects'
+2014-08-28 11:26:33,351 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'FindGenericServiceObjects'.
+2014-08-28 11:26:33,352 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname FindGenericServiceObjects
+2014-08-28 11:26:33,354 [10] DEBUG Spring.Context.Support.XmlApplicationContext [(null)] - Publishing event in context [spring.root] : ContextRefreshedEventArgs [Refreshed]
+2014-08-28 11:26:33,356 [10] INFO  Spring.Scheduling.Quartz.SchedulerFactoryObject [(null)] - Starting Quartz Scheduler now
+2014-08-28 11:26:33,360 [10] INFO  Quartz.Core.QuartzScheduler [(null)] - Scheduler ScheduleObject_$_NON_CLUSTERED started.
+2014-08-28 11:26:33,375 [10] INFO  Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2014-08-28 11:26:33,381 [10] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Registering context 'Spring.Context.Support.XmlApplicationContext' under name 'spring.root'.
+2014-08-28 11:26:33,390 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name FindGenericServiceObjects => canonical name FindGenericServiceObjects
+2014-08-28 11:26:33,392 [10] DEBUG Spring.Context.Support.ContextHandler [(null)] - context 'Spring.Context.Support.XmlApplicationContext' created for name 'spring.root'
+2014-08-28 11:26:33,393 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'FindGenericServiceObjects'.
+2014-08-28 11:26:33,395 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'FindGenericServiceObjects'.
+2014-08-28 11:26:33,394 [10] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+2014-08-28 11:26:33,396 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname FindGenericServiceObjects
+2014-08-28 11:26:33,398 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name ScheduleObject => canonical name ScheduleObject
+2014-08-28 11:26:33,398 [ScheduleObject_Worker-1] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+2014-08-28 11:26:33,399 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'ScheduleObject'.
+2014-08-28 11:26:33,401 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Object with name 'ScheduleObject' is a factory object.
+2014-08-28 11:26:33,402 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -       GetObjectInternal: obtaining instance for name myJob => canonical name myJob
+2014-08-28 11:26:33,402 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Dereferencing Object with name 'ScheduleObject'
+2014-08-28 11:26:33,404 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'myJob'.
+2014-08-28 11:26:33,425 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'myJob'.
+2014-08-28 11:26:33,426 [ScheduleObject_Worker-1] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: returning instance for objectname myJob
+2014-08-28 11:26:33,405 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Invoking IObjectPostProcessors after initialization of object 'ScheduleObject'
+2014-08-28 11:26:35,497 [ScheduleObject_Worker-1] INFO  MyService.IGenericService [(null)] - Job 1 Executed !!!!
+2014-08-28 11:26:35,505 [10] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname ScheduleObject
+2014-08-28 11:26:38,156 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name FindGenericServiceObjects => canonical name FindGenericServiceObjects
+2014-08-28 11:26:38,158 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'FindGenericServiceObjects'.
+2014-08-28 11:26:38,160 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'FindGenericServiceObjects'.
+2014-08-28 11:26:38,161 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname FindGenericServiceObjects
+2014-08-28 11:26:38,163 [ScheduleObject_Worker-2] DEBUG Spring.Context.Support.ContextRegistry [(null)] - Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.
+2014-08-28 11:26:38,165 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: obtaining instance for name myJob => canonical name myJob
+2014-08-28 11:26:38,166 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Returning cached instance of singleton object 'myJob'.
+2014-08-28 11:26:38,168 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - Calling code asked for normal instance for name 'myJob'.
+2014-08-28 11:26:38,170 [ScheduleObject_Worker-2] DEBUG Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: returning instance for objectname myJob
+2014-08-28 11:26:38,171 [ScheduleObject_Worker-2] INFO  MyService.IGenericService [(null)] - Job 1 Executed !!!!

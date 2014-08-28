@@ -1,0 +1,15 @@
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\MyService.dll
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\MyService.pdb
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\Common.Logging.dll
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\log4net.dll
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\log4net.xml
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\obj\Debug\MyJob.csprojResolveAssemblyReference.cache
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\obj\Debug\MyService.dll
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\obj\Debug\MyService.pdb
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\GenericService.dll
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\GenericService.pdb
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\Spring.Core.dll
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\Spring.Core.pdb
+C:\Users\fsideris\documents\visual studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\Spring.Core.xml
+C:\Users\fsideris\Documents\Visual Studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\Common.Logging.pdb
+C:\Users\fsideris\Documents\Visual Studio 2012\Projects\Quartz.net Windows Service\MyService\bin\Debug\Common.Logging.xml
